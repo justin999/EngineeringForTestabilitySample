@@ -16,6 +16,8 @@
 		DC06DE961FFF9F06000238C7 /* EngineeringForTestabilitySampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC06DE951FFF9F06000238C7 /* EngineeringForTestabilitySampleUITests.swift */; };
 		DC06DEA41FFFB5B2000238C7 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC06DEA31FFFB5B2000238C7 /* PreviewViewController.swift */; };
 		DC06DEA820004907000238C7 /* PreviewViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC06DEA720004907000238C7 /* PreviewViewControllerTest.swift */; };
+		DC06DEAA20007BFF000238C7 /* OnDiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC06DEA920007BFF000238C7 /* OnDiskCache.swift */; };
+		DCE3903D2000873400CB4A24 /* OnDiskCacheTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE3903C2000873400CB4A24 /* OnDiskCacheTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		DC06DE971FFF9F06000238C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC06DEA31FFFB5B2000238C7 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		DC06DEA720004907000238C7 /* PreviewViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewControllerTest.swift; sourceTree = "<group>"; };
+		DC06DEA920007BFF000238C7 /* OnDiskCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDiskCache.swift; sourceTree = "<group>"; };
+		DCE3903C2000873400CB4A24 /* OnDiskCacheTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDiskCacheTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				DC06DE751FFF9F05000238C7 /* AppDelegate.swift */,
 				DC06DE771FFF9F05000238C7 /* ViewController.swift */,
 				DC06DEA31FFFB5B2000238C7 /* PreviewViewController.swift */,
+				DC06DEA920007BFF000238C7 /* OnDiskCache.swift */,
 				DC06DE791FFF9F05000238C7 /* Main.storyboard */,
 				DC06DE7C1FFF9F05000238C7 /* Assets.xcassets */,
 				DC06DE7E1FFF9F05000238C7 /* LaunchScreen.storyboard */,
@@ -117,6 +122,7 @@
 			children = (
 				DC06DE8A1FFF9F06000238C7 /* EngineeringForTestabilitySampleTests.swift */,
 				DC06DEA720004907000238C7 /* PreviewViewControllerTest.swift */,
+				DCE3903C2000873400CB4A24 /* OnDiskCacheTest.swift */,
 				DC06DE8C1FFF9F06000238C7 /* Info.plist */,
 			);
 			path = EngineeringForTestabilitySampleTests;
@@ -266,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC06DE781FFF9F05000238C7 /* ViewController.swift in Sources */,
+				DC06DEAA20007BFF000238C7 /* OnDiskCache.swift in Sources */,
 				DC06DE761FFF9F05000238C7 /* AppDelegate.swift in Sources */,
 				DC06DEA41FFFB5B2000238C7 /* PreviewViewController.swift in Sources */,
 			);
@@ -276,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC06DE8B1FFF9F06000238C7 /* EngineeringForTestabilitySampleTests.swift in Sources */,
+				DCE3903D2000873400CB4A24 /* OnDiskCacheTest.swift in Sources */,
 				DC06DEA820004907000238C7 /* PreviewViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
