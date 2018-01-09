@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC06DE761FFF9F05000238C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC06DE751FFF9F05000238C7 /* AppDelegate.swift */; };
-		DC06DE781FFF9F05000238C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC06DE771FFF9F05000238C7 /* ViewController.swift */; };
+		DC06DE781FFF9F05000238C7 /* UITestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC06DE771FFF9F05000238C7 /* UITestViewController.swift */; };
 		DC06DE7B1FFF9F05000238C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC06DE791FFF9F05000238C7 /* Main.storyboard */; };
 		DC06DE7D1FFF9F05000238C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC06DE7C1FFF9F05000238C7 /* Assets.xcassets */; };
 		DC06DE801FFF9F05000238C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC06DE7E1FFF9F05000238C7 /* LaunchScreen.storyboard */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		DC06DE721FFF9F05000238C7 /* EngineeringForTestabilitySample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngineeringForTestabilitySample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC06DE751FFF9F05000238C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC06DE771FFF9F05000238C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC06DE771FFF9F05000238C7 /* UITestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestViewController.swift; sourceTree = "<group>"; };
 		DC06DE7A1FFF9F05000238C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC06DE7C1FFF9F05000238C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC06DE7F1FFF9F05000238C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				DC06DE751FFF9F05000238C7 /* AppDelegate.swift */,
-				DC06DE771FFF9F05000238C7 /* ViewController.swift */,
+				DC06DE771FFF9F05000238C7 /* UITestViewController.swift */,
 				DC06DEA31FFFB5B2000238C7 /* PreviewViewController.swift */,
 				DC06DEA920007BFF000238C7 /* OnDiskCache.swift */,
 				DC06DE791FFF9F05000238C7 /* Main.storyboard */,
@@ -271,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC06DE781FFF9F05000238C7 /* ViewController.swift in Sources */,
+				DC06DE781FFF9F05000238C7 /* UITestViewController.swift in Sources */,
 				DC06DEAA20007BFF000238C7 /* OnDiskCache.swift in Sources */,
 				DC06DE761FFF9F05000238C7 /* AppDelegate.swift in Sources */,
 				DC06DEA41FFFB5B2000238C7 /* PreviewViewController.swift in Sources */,

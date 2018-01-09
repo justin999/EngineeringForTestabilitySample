@@ -8,7 +8,74 @@
 
 import XCTest
 
+class GameApp: XCUIApplication {
+    let app = XCUIApplication()
+    
+    enum Difficulty: String {
+        case beginner
+        case intermediate
+        case veteran
+    }
+    enum Sound: String {
+        case on
+        case off
+    }
+    
+    func setDifficulty(_ difficulty: Difficulty) {
+        app.buttons["Difficulty"].tap()
+        app.buttons[difficulty.rawValue].tap()
+        app.navigationBars.buttons["Back"].tap()
+    }
+    
+    func setSound(_ sound: Sound) {
+        app.buttons["Sound"].tap()
+        app.buttons[sound.rawValue].tap()
+        app.navigationBars.buttons["Back"].tap()
+    }
+    
+    func configureSettings(difficulty: Difficulty, sound: Sound) {
+        XCTContext.runActivity(named: "Configure Settings: \(difficulty), \(sound)") { _ in
+            app.navigationBars["Game.GameView"].buttons["Settings"].tap()
+            setDifficulty(difficulty)
+            setSound(sound)
+            app.navigationBars.buttons["Back"].tap()
+        }
+    }
+    
+}
+
 class EngineeringForTestabilitySampleUITests: XCTestCase {
+    let app = GameApp()
+    func testGameWithDifficultyBeginnerAndSoundOff() {
+        app.configureSettings(difficulty: .beginner, sound: .off)
+        
+        // test code
+        
+    }
+    
+    // 2. better than 1.version
+    // Still, it could be abstracted.
+    func testGameWithDifficultyBeginnerAndSoundOff_Unscalable2() {
+        app.navigationBars["Game.GameView"].buttons["Settings"].tap()
+        app.setDifficulty(.beginner)
+        app.setSound(.off)
+        app.navigationBars.buttons["Back"].tap()
+        // test code
+        
+    }
+    
+    // 1. can't understand what is done here afterwards.
+    // need to be abstract the behavior
+    func testGameWithDifficultyBeginnerAndSoundOff_Unscalable1() {
+        app.navigationBars["Game.GameView"].buttons["Settings"].tap()
+        app.buttons["Difficulty"].tap()
+        app.buttons["beginner"].tap()
+        app.navigationBars.buttons["Back"].tap()
+        app.buttons["Sound"].tap()
+        app.buttons["off"].tap()
+        app.navigationBars.buttons["Back"].tap()
+        app.navigationBars.buttons["Back"].tap()
+    }
         
     override func setUp() {
         super.setUp()
@@ -32,5 +99,6 @@ class EngineeringForTestabilitySampleUITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
     
 }

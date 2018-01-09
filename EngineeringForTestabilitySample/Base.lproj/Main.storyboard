@@ -73,16 +73,35 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ObD-ih-SF7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ssX-rJ-J5A">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="PFQ-kk-Cqi"/>
+                        <segue destination="DLU-cz-I0A" kind="relationship" relationship="viewControllers" id="gfA-bo-cQO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILe-QY-qlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-163.19999999999999" y="132.23388305847078"/>
+        </scene>
+        <!--UI Test-->
+        <scene sceneID="XR5-NN-HKy">
+            <objects>
+                <viewController id="DLU-cz-I0A" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ia-Er-0DX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.29312044380000002" green="0.3252537251" blue="0.3461556435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="qUz-PS-6eX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="UI Test" id="csA-QK-dom"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSt-d4-Okb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="616"/>
         </scene>
     </scenes>
 </document>
